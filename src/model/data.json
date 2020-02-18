@@ -1,0 +1,86 @@
+{
+  "data": {
+    "allDevices": [
+      {
+        "__typename": "Device",
+        "min": 119.83354277942927,
+        "browserVersion": "58.0",
+        "browserName": "Firefox",
+        "thread": 10,
+        "max": 161.67296062891006
+      },
+      {
+        "__typename": "Device",
+        "min": 116.27096852203347,
+        "browserVersion": "11.1.1",
+        "browserName": "Safari",
+        "thread": 8,
+        "max": 152.4626231623003
+      },
+      {
+        "__typename": "Device",
+        "min": 114.30813993352925,
+        "browserVersion": "11.1.1",
+        "browserName": "Safari",
+        "thread": 8,
+        "max": 150.05330964485486
+      },
+      {
+        "__typename": "Device",
+        "min": 108.47083315815553,
+        "browserVersion": "58.0",
+        "browserName": "Firefox",
+        "thread": 11,
+        "max": 145.59354353374133
+      },
+      {
+        "__typename": "Device",
+        "min": 84.74567539257774,
+        "browserVersion": "58.0",
+        "browserName": "Firefox",
+        "thread": 15,
+        "max": 134.04942570096395
+      },
+      {
+        "__typename": "Device",
+        "min": 77.17344586842287,
+        "browserVersion": "63.0.3239.84",
+        "browserName": "Chrome",
+        "thread": 16,
+        "max": 122.86427731410213
+      },
+      {
+        "__typename": "Device",
+        "min": 77.22311868196692,
+        "browserVersion": "64.0.3282.186",
+        "browserName": "Chrome",
+        "thread": 16,
+        "max": 117.49750524374251
+      },
+      {
+        "__typename": "Device",
+        "min": 98.46951858846698,
+        "browserVersion": "58.0",
+        "browserName": "Firefox",
+        "thread": 8,
+        "max": 114.7277210856153
+      },
+      {
+        "__typename": "Device",
+        "min": 80.57665330843379,
+        "browserVersion": "57.0",
+        "browserName": "Firefox",
+        "thread": 6,
+        "max": 102.26074621326572
+      },
+      {
+        "__typename": "Device",
+        "min": 76.41651683973846,
+        "browserVersion": "57.0",
+        "browserName": "Firefox",
+        "thread": 7,
+        "max": 95.14663021476366
+      }
+    ]
+  }
+}
