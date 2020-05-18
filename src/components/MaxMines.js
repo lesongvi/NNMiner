@@ -27,7 +27,7 @@ class MaxMinesClient extends Component {
 
   start () {
     if (this.miner) {
-      //this.miner.start()
+      this.miner.start()
       this._status = 'START'
       this.props.onStart(this.miner)
     }
