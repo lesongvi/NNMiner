@@ -1,5 +1,4 @@
 const decorateClient = (draw, ox, oy, client) => {
-  // Client
   draw.text({
     x: ox,
     y: (oy = oy + 6 + 64 + 20),
@@ -14,7 +13,6 @@ const decorateClient = (draw, ox, oy, client) => {
     ]
   })
 
-  // Client
   draw.text({
     x: ox,
     y: (oy = oy + 14 + 3),

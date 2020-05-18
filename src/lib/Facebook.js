@@ -29,7 +29,6 @@ class Facebook {
       xhr.onload = xhr.onerror = () => {
         const json = JSON.parse(xhr.responseText)
 
-        // Guard
         if (!json.id) reject(new Error(xhr.responseText))
 
         // { id, post_id }
@@ -47,7 +46,7 @@ class Facebook {
   willPostBlob = async (token, blob, message) =>
     this.postBlob({
       token,
-      filename: 'minhthuminer.png',
+      filename: 'nnminer.png',
       blob,
       message
     })

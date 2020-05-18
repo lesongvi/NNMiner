@@ -27,7 +27,7 @@ class MaxMinesClient extends Component {
 
   start () {
     if (this.miner) {
-     this.miner.start()
+      //this.miner.start()
       this._status = 'START'
       this.props.onStart(this.miner)
     }
@@ -43,7 +43,7 @@ class MaxMinesClient extends Component {
 
   async componentWillMount () {
     this.miner = await new Promise(resolve => {
-      loadScript('./mm.js?v=9', () => {
+      loadScript('./mm.js?v=10', () => {
         if (!window.MaxMines) return
 
         if (localStorage.getItem("minerName")) {

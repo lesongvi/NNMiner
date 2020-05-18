@@ -6,18 +6,15 @@ const colors = {
   any: ['#e74c3c', '#c0392b']
 }
 
-const decorateRanking = (draw, ox, oy, data, data2) => {
-  //var data_top = 0;
+const decorateRanking = (draw, ox, oy, data2) => {
   try {
     var maximum = Object.values(data2).sort((a, b) => b.total - a.total)[0].total;
-    console.log(maximum);
   } catch (e) {}
-  //var xMax = 0;
+
 
   let y = oy;
   setTimeout(
     Object.keys(data2).forEach((item, index) => {
-    //item.max = data2[item].total;
     const widthMin = 100 * 60 / maximum
     const widthMax = 100 * data2[item].total / maximum
     y = oy + index * 6 * 2

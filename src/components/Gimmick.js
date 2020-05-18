@@ -5,7 +5,7 @@ const decorateGimmick = (draw, ox, oy, data) => {
     draw.image({
       x: 0,
       y: 0,
-      id: `car${index}`,
+      id: `faceMT${index}`,
       width: 70,
       height: 70,
       href: './cute.png'

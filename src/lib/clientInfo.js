@@ -8,7 +8,6 @@ class clientInfo {
   getData = () => {
     const result = this.ua.getResult()
 
-    // Patch
     result.cpu.architecture = this.getCPU(result.cpu.architecture)
     result.device.vendor = this.getVendor(result.device.vendor)
 

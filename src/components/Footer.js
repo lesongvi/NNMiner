@@ -1,6 +1,5 @@
 import React from 'react'
 
-// Styles
 import styled from 'styled-components'
 
 const Divz = styled.div`
@@ -37,18 +36,18 @@ const Footer = () => (
     <ul>
       <li>
         <a
-          href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnhmthu.github.io%2Fminhthuminer&t='
-          title='Share on Facebook'
+          href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fngocnhipy.github.io%2Fnnminer&t='
+          title='Chia sẽ lên Facebook'
           target='_blank'
           rel='noopener noreferrer'
           onClick={facebook}
         >
-          <img alt='Share on Facebook' src='images/facebook.png' />
+          <img alt='Chia sẽ lên Facebook' src='images/facebook.png' />
         </a>
       </li>
       <li>
         <a
-          href='https://twitter.com/intent/tweet?source=https%3A%2F%2Fnhmthu.github.io%2Fminhthuminer&text=:%20https%3A%2F%2Fnhmthu.github.io%2Fminhthuminer'
+          href='https://twitter.com/intent/tweet?source=https%3A%2F%2Fngocnhipy.github.io%2Fnnminer&text=:%20https%3A%2F%2Fngocnhipy.github.io%2Fnnminer'
           target='_blank'
           title='Tweet'
           rel='noopener noreferrer'
@@ -59,35 +58,24 @@ const Footer = () => (
       </li>
       <li>
         <a
-          href='https://plus.google.com/share?url=https%3A%2F%2Fnhmthu.github.io%2Fminhthuminer'
+          href='https://getpocket.com/save?url=https%3A%2F%2Fngocnhipy.github.io%2Fnnminer&title='
           target='_blank'
-          title='Share on Google+'
-          rel='noopener noreferrer'
-          onClick={google}
-        >
-          <img alt='Share on Google+' src='images/google.png' />
-        </a>
-      </li>
-      <li>
-        <a
-          href='https://getpocket.com/save?url=https%3A%2F%2Fnhmthu.github.io%2Fminhthuminer&title='
-          target='_blank'
-          title='Add to Pocket'
+          title='Thêm vào Pocket'
           rel='noopener noreferrer'
           onClick={pocket}
         >
-          <img alt='Add to Pocket' src='images/pocket.png' />
+          <img alt='Thêm vào Pocket' src='images/pocket.png' />
         </a>
       </li>
       <li>
         <a
-          href='http://www.reddit.com/submit?url=https%3A%2F%2Fnhmthu.github.io%2Fminhthuminer&title='
+          href='http://www.reddit.com/submit?url=https%3A%2F%2Fngocnhipy.github.io%2Fnnminer&title='
           target='_blank'
-          title='Submit to Reddit'
+          title='Đăng lên Reddit'
           rel='noopener noreferrer'
           onClick={reddit}
         >
-          <img alt='Submit to Reddit' src='images/reddit.png' />
+          <img alt='Đăng lên Reddit' src='images/reddit.png' />
         </a>
       </li>
     </ul>
