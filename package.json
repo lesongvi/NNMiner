@@ -14,7 +14,7 @@
     "load-script": "^1.0.0",
     "localforage": "^1.7.3",
     "material-ui": "^0.20.2",
-    "minimist": "^0.2.1",
+    "minimist": "^1.2.3",
     "nano-md5": "^1.0.5",
     "query-string": "^6.11.1",
     "react": "^16.13.0",
