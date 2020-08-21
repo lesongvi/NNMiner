@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 // apollo imports
 import { ApolloProvider } from 'react-apollo'
 import ApolloClient from 'apollo-client'
-import { HttpLink, InMemoryCache } from 'apollo-client-preset'
+import { HttpLink, InMemoryCache } from 'apollo-boost'
 
 import App from './App'
 import './index.css'

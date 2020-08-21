@@ -4,11 +4,9 @@ import is from 'is_js'
 import { Buttonz } from '../styles/buttons'
 import { trackEvent } from '../lib/analytics'
 
-import TextField from 'material-ui/TextField'
+import { TextField } from '@material-ui/core'
 
-import { deepOrange500, blue500 } from 'material-ui/styles/colors'
-import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import { MuiThemeProvider, getMuiTheme, deepOrange500, blue500 } from '@material-ui/core/styles';
 
 import styled from 'styled-components'
 
