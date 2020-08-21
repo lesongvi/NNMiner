@@ -6,7 +6,7 @@ import { trackEvent } from '../lib/analytics'
 
 import { TextField } from '@material-ui/core'
 
-import { MuiThemeProvider, getMuiTheme, deepOrange500, blue500 } from '@material-ui/core/styles';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import styled from 'styled-components'
 
@@ -14,9 +14,9 @@ const Formz = styled.form`
   padding-bottom: 10vh;
 `
 
-const muiTheme = getMuiTheme({
+const muiTheme = createMuiTheme({
   palette: {
-    accent1Color: deepOrange500
+    accent1Color: "#ff5722"
   }
 })
 
@@ -49,7 +49,7 @@ class Setting extends Component {
         <Formz onSubmit={this.onSubmit}>
           <TextField
             ref='minername'
-            underlineStyle={{ borderColor: blue500 }}
+            underlineStyle={{ borderColor: "#2196f3" }}
             floatingLabelText=' Nhập tên máy đào của bạn.'
             defaultValue={defaultValueHere}
           />
