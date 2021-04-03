@@ -8,6 +8,7 @@ class Meter {
   update = (targetHPS = 0.000) => {
     this.currentHPS += (targetHPS - this.currentHPS) / 8
     this.hps.innerHTML = Number(this.currentHPS).toPrecision(4)
+    document.title = `${Number(this.currentHPS).toPrecision(4)} H/s`
   }
 }
 

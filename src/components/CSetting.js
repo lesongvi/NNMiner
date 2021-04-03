@@ -10,7 +10,7 @@ const CSetting = ({ isShowAbout, persistanceData, client }) =>
   isShowAbout ? (
     stamp() && (
       <div>
-        <Setting client={client} persistanceData={persistanceData} />
+        <Setting client={client} persistanceData={persistanceData} onShowDone={val => isShowAbout = val}/>
       </div>
     )
   ) : (

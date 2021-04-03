@@ -5,6 +5,7 @@ import { Buttonz } from '../styles/buttons'
 import { trackEvent } from '../lib/analytics'
 
 import { TextField } from '@material-ui/core'
+import { withStyles } from "@material-ui/core/styles";
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
@@ -20,42 +21,69 @@ const muiTheme = createMuiTheme({
   }
 })
 
-const defaultValueHere = localStorage.getItem('minerName');
+const txtColor = {
+  root: {
+    background: "black"
+  },
+  input: {
+    color: "#FFF"
+  }
+};
 
 class Setting extends Component {
   constructor (props) {
-    super(props)
-    this.persistanceData = props.persistanceData
+    super(props);
+    this.persistanceData = props.persistanceData;
+
+    this.state = {
+      minername: localStorage.getItem('minerName')
+    }
+  }
+
+  handleChange = e => {
+    const { name, value } = e.target;
+
+    this.setState({
+      [name]: value
+    })
   }
 
   onSubmit = e => {
     e.preventDefault()
-
-    const minername = this.refs.minername.input.value
-    localStorage.removeItem('minerName');
-    localStorage.setItem('minerName', this.refs.minername.input.value);
-
-    trackEvent('submit', { minername })
-
-    if (is.undefined(minername) || is.null(minername)) {
+    const minername = this.state.minername;
+    
+    if (is.undefined(minername) || is.null(minername) || minername === "") {
       alert('Nhập tên máy đào dùm tui')
       return
     }
+
+    localStorage.removeItem('minerName');
+    localStorage.setItem('minerName', minername);
+
+    trackEvent('submit', { minername });
+
+    //this.props.onShowDone(false);
   }
 
   render () {
+    const { classes } = this.props;
+    const { minername } = this.state;
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <Formz onSubmit={this.onSubmit}>
           <TextField
-            ref='minername'
+            onChange={this.handleChange}
             underlineStyle={{ borderColor: "#2196f3" }}
+            InputProps={{
+              className: classes.input
+            }}
             floatingLabelText=' Nhập tên máy đào của bạn.'
-            defaultValue={defaultValueHere}
+            defaultValue={minername}
+            name="minername"
           />
           <br />
           <Buttonz type='submit'>
-            <span>Xong</span>
+            <span>Lưu</span>
           </Buttonz>
         </Formz>
       </MuiThemeProvider>
@@ -63,4 +91,4 @@ class Setting extends Component {
   }
 }
 
-export default Setting
+export default withStyles(txtColor)(Setting)
