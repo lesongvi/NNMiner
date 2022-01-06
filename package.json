@@ -19,7 +19,7 @@
     "nano-md5": "^1.0.5",
     "query-string": "^6.14.1",
     "react": "^16.14.0",
-    "react-apollo": "^2.5.8",
+    "react-apollo": "^3.0.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
     "react-responsive-music-player": "^0.4.3",
