@@ -23,7 +23,7 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
     "react-responsive-music-player": "^0.4.3",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.0",
     "styled-components": "^4.4.1",
     "timeago.js": "^4.0.2",
     "ua-parser-js": "^0.7.31",
