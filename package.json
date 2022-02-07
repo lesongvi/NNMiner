@@ -17,7 +17,7 @@
     "localforage": "^1.10.0",
     "minimist": "^1.2.3",
     "nano-md5": "^1.0.5",
-    "query-string": "^7.1.0",
+    "query-string": "^7.1.1",
     "react": "^16.14.0",
     "react-apollo": "^3.0.0",
     "react-dom": "^16.14.0",
