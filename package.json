@@ -7,7 +7,7 @@
     "acorn": "^8.7.0",
     "apollo-boost": "^0.4.9",
     "apollo-client": "^2.6.8",
-    "axios": "^0.26.1",
+    "axios": "^1.0.0",
     "braces": "^3.0.2",
     "canvg-browser": "^1.0.0",
     "graphql": "^14.6.0",
