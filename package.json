@@ -24,7 +24,7 @@
     "react-helmet": "^6.1.0",
     "react-responsive-music-player": "^0.4.3",
     "react-scripts": "^5.0.1",
-    "styled-components": "^4.4.1",
+    "styled-components": "^6.0.0",
     "timeago.js": "^4.0.2",
     "ua-parser-js": "^1.0.34",
     "uuid": "^9.0.0"
