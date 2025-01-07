@@ -27,7 +27,7 @@
     "styled-components": "^6.1.14",
     "timeago.js": "^4.0.2",
     "ua-parser-js": "^1.0.34",
-    "uuid": "^9.0.0"
+    "uuid": "^11.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
